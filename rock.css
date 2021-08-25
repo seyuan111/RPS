@@ -5,5 +5,25 @@
 }
 
 body{
-    font-family:'Segoe UI', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.banner{
+    width: 100vh;
+    height: 100vh;
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scores{
+    width: 700px;
+    border: 1px solid yellow;
+    border-radius: 12px;
+    margin-top: 50px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
