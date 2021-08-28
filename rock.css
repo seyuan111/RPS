@@ -5,13 +5,14 @@
 }
 
 body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
 }
 
 .banner{
     width: 100vh;
     height: 100vh;
-    background-color: darkblue;
+    background-color: rgba(41, 146, 120, 0.4);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,3 +28,112 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
+.finalscore{
+    width: 150px;
+    height: 114px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.finalscore h1{
+    color: purple;
+}
+
+.finalscore p{
+    color: darkblue;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 21px;
+    letter-spacing: 1.5px;
+}
+
+.game{
+    margin-left: 30px;
+}
+
+.hand{
+    background-image: url('/assets/triangle.png');
+    background-repeat: no-repeat;
+    width: 476px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    background-position: center;
+}
+
+.scissors{
+    margin-left: 20px;
+}
+
+.paper{
+    margin-right: 20px;
+}
+
+.hand .hands{
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.hand .hands:hover{
+    transform: translate3d(0px,-8px,0px);
+}
+
+.begin{
+    width: 900px;
+    display: flex;
+    margin-top: 30px;
+}
+
+.begin img{
+    width: 275px;
+    height: 275px;
+}
+
+.begin > div{
+    flex: 1;
+}
+
+.begin h1{
+    color: rgba(68, 9, 9, 0.4);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.handImageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.caller{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caller h1{
+    font-size: 35px;
+}
+
+.newGame{
+    background-color: rgba(68, 9, 9, 0.4);
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: hsl(300,15%,40%);
+}
+
+.newGame:hover{
+    background-color: grey;
+    transform: translate3d(0px,-2px,0px);
+}
+/* > - target the closest div. without > will target all the div within the .begin.
